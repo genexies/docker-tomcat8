@@ -20,6 +20,6 @@ FROM tomcat:8-jre8
   ```
   docker run -e CATALINA_OPTS="-Djava.awt.headless=true -Xmx1280m -Xms1280m -XX:+UseConcMarkSweepGC" \
              -p 8080:8080 \
-             --name=tomcat8
+             --name=tomcat8 \
              -d genexies/tomcat8:latest
   ```
